@@ -19,7 +19,7 @@ To apply knowledge of React to build an eCom store.
 - React
 - React-Router-DOM
 - styled-components
-- MUI
+- Material UI Icons (MUI)
 
 ## Getting Started
 
@@ -40,6 +40,12 @@ https://github.com/christerolsen/front-end-frameworks-ca.git
 
 ```bash
 npm install
+```
+
+3. Install Material UI Icons
+
+```bash
+npm install @mui/icons-material @mui/material @emotion/react @emotion/styled
 ```
 
 ### Running the Application
@@ -74,6 +80,7 @@ npm run lint
 - **React DOM:** `^18.2.0`
 - **React Router DOM:** `^6.23.1`
 - **Styled Components:** `^5.3.10`
+- **Material UI Icons** `^5.2.0`
 
 ## Dev Dependencies
 
@@ -128,6 +135,26 @@ npm run lint
 
 - **Layout:** Contains the header with navigation, cart icon, and footer.
 - **Cart:** Contains....
+
+### Using Material UI Icons
+
+1. **Import the required icon** from the `@mui/icons-material` package.
+2. **Use the imported icon** in your component's JSX.
+
+```jsx
+import React from "react";
+import HomeIcon from "@mui/icons-material/Home";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+
+const ExampleComponent = () => {
+  return (
+    <div>
+      <HomeIcon />
+      <ShoppingCartIcon />
+    </div>
+  );
+};
+```
 
 ## Contact
 
