@@ -1,6 +1,6 @@
 // HomePage index.jsx
 const HomePage = () => {
-  document.title = "SHOPeCOM";
+  document.title = "eComify";
 
   return (
     <>
