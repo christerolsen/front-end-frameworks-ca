@@ -1,12 +1,12 @@
 import React from "react";
-import { IconButton } from "@mui/material";
+import { StyledNavLink } from "./styled";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 const CartIcon = () => {
   return (
-    <IconButton color="inherit" aria-label="cart">
+    <StyledNavLink to="/cart">
       <ShoppingCartIcon />
-    </IconButton>
+    </StyledNavLink>
   );
 };
 

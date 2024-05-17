@@ -1,13 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Nav, Logo, NavUl, NavItem, StyledLink } from "./styled";
-import CartIcon from "../CartIcon";
+import LogoIcon from "@mui/icons-material/Storefront";
 
 const Navbar = () => {
   return (
     <Nav>
-      <StyledLink to="/">
-        <Logo>eComify</Logo>
+      <StyledLink to="./">
+        <Logo>
+          <LogoIcon />
+          <span>eComify</span>
+        </Logo>
       </StyledLink>
       <NavUl>
         <NavItem>

@@ -1,10 +1,10 @@
 // HomePage index.jsx
-const HomePage = () => {
-  document.title = "eComify";
+const ContactPage = () => {
+  document.title = "eComify | Contact";
 
   return (
     <>
-      <h1>This is main</h1>
+      <h1>Contact us</h1>
       <h2>Main is where the main content of the page will diplay</h2>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quaerat,
@@ -29,4 +29,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default ContactPage;

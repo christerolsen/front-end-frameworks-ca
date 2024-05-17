@@ -1,7 +1,14 @@
 import React from "react";
+import { StyledFooter } from "./styled";
 
 const Footer = () => {
-  return <footer>Copyright 2024 &Copy; Christer Olsen</footer>;
+  return (
+    <StyledFooter>
+      <span>Copyright &copy;</span>
+      <span>Christer Olsen</span>
+      <span>2024</span>
+    </StyledFooter>
+  );
 };
 
 export default Footer;

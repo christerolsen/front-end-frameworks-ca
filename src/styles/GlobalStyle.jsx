@@ -9,6 +9,13 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
 
+  #root {
+    height: 100dvh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+  }
+
 body {
     margin: 0;
     background: ${({ theme }) => theme.colors.background};

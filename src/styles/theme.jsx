@@ -3,16 +3,16 @@ import { ThemeProvider } from "styled-components";
 
 const theme = {
   colors: {
-    primary: "#C49054" /* Brown */,
-    secondary: "#EB4754" /* Red */,
-    accent: "#6895BA" /* Light Blue */,
-    background: "#EDF1F2" /* White */,
-    error: "#EB4754" /* Red */,
-    success: "#54A770" /* Green */,
-    disabled: "#9E9E9E" /* Gray */,
-    black: "#1C1820" /* Black */,
-    white: "#EDF1F2" /* White */,
-    grey: "#BDBDBD" /* Light Gray */,
+    primary: "#2C3E50", // Dark Blue Grey
+    secondary: "#18BC9C", // Turquoise
+    accent: "#E74C3C", // Soft Red
+    background: "#ECF0F1", // Light Grey
+    error: "#E74C3C", // Soft Red (Same as accent for consistency)
+    success: "#2ECC71", // Soft Green
+    disabled: "#BDC3C7", // Grey Blue
+    black: "#2C3E50", // Dark Blue Grey (Same as primary for consistency)
+    white: "#FFFFFF", // Pure White
+    grey: "#95A5A6", // Soft Grey
   },
 
   fonts: {
@@ -32,9 +32,9 @@ const theme = {
   },
 
   shadows: {
-    small: "0px 2px 4px rgba(0, 0, 0, 0.05)",
-    medium: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-    large: "0px 8px 16px rgba(0, 0, 0, 0.1)",
+    small: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+    medium: "0px 8px 16px rgba(0, 0, 0, 0.2)",
+    large: "0px 12px 24px rgba(0, 0, 0, 0.3)",
   },
 };
 
