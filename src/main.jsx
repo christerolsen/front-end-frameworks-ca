@@ -8,8 +8,8 @@ import GlobalStyle from "./styles/GlobalStyle.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Theme>
+      <GlobalStyle />
       <BrowserRouter>
-        <GlobalStyle />
         <App />
       </BrowserRouter>
     </Theme>

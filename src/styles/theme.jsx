@@ -3,22 +3,22 @@ import { ThemeProvider } from "styled-components";
 
 const theme = {
   colors: {
-    primary: "var(--color-primary)",
-    secondary: "var(--color-secondary)",
-    accent: "var(--color-accent)",
-    background: "var(--color-background)",
-    error: "var(--color-error)",
-    success: "var(--color-success)",
-    disabled: "var(--color-disabled)",
-    black: "var(--color-black)",
-    white: "var(--color-white)",
-    grey: "var(--color-grey)",
+    primary: "#C49054" /* Brown */,
+    secondary: "#EB4754" /* Red */,
+    accent: "#6895BA" /* Light Blue */,
+    background: "#EDF1F2" /* White */,
+    error: "#EB4754" /* Red */,
+    success: "#54A770" /* Green */,
+    disabled: "#9E9E9E" /* Gray */,
+    black: "#1C1820" /* Black */,
+    white: "#EDF1F2" /* White */,
+    grey: "#BDBDBD" /* Light Gray */,
   },
 
   fonts: {
-    heading: "var(--font-heading)",
-    body: "var(--font-body)",
-    button: "var(--font-cta)",
+    heading: "Poppins, sans-serif",
+    body: "Roboto, sans-serif",
+    cta: "Montserrat, sans-serif",
   },
 
   borders: {
