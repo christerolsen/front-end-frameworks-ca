@@ -1,10 +1,9 @@
-import { Routes, Route } from "react-router-dom";
-
+import React from "react";
+import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-
 import Layout from "./components/Layout";
 
-function App() {
+const App = () => {
   return (
     <>
       <Routes>
@@ -14,6 +13,6 @@ function App() {
       </Routes>
     </>
   );
-}
+};
 
 export default App;
