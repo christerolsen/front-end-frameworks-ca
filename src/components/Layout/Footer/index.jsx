@@ -4,8 +4,7 @@ import { StyledFooter } from "./styled";
 const Footer = () => {
   return (
     <StyledFooter>
-      <span>Copyright &copy;</span>
-      <span>Christer Olsen</span>
+      <span>Christer Olsen &copy;</span>
       <span>2024</span>
     </StyledFooter>
   );

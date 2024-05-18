@@ -45,10 +45,6 @@ ul {
     padding: 0;
 }
 
-button {
-    font-family: ${({ theme }) => theme.fonts.cta};
-}
-
 `;
 
 export default GlobalStyle;

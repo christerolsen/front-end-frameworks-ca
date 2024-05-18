@@ -40,10 +40,12 @@ export const NavUl = styled.ul`
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 `;
 
 export const NavItem = styled.li`
+  padding: 0 2rem;
+
   &:hover {
     color: ${({ theme }) => theme.colors.background};
   }

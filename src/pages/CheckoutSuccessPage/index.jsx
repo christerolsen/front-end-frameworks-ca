@@ -1,11 +1,10 @@
-import Button from "../../components/Button";
-
-const HomePage = () => {
-  document.title = "eComify | Home";
+// HomePage index.jsx
+const CheckoutSuccessPage = () => {
+  document.title = "eComify | Success";
 
   return (
     <>
-      <h1>Home H1</h1>
+      <h1>Checkout Succsess H1</h1>
       <p>Main is where the main content of the page will diplay</p>
       <h2>And here's H2</h2>
       <p>
@@ -24,12 +23,9 @@ const HomePage = () => {
       <p>
         <a href="#">This is a link</a>
       </p>
-      <Button variant="primary">Primary</Button>
-      <Button variant="secondary">Secondary</Button>
-      <Button variant="accent">Accent</Button>
-      <Button variant="disabled">Disabled</Button>
+      <button>Click</button>
     </>
   );
 };
 
-export default HomePage;
+export default CheckoutSuccessPage;
