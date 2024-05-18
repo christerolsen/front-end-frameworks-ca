@@ -6,7 +6,7 @@ const HomePage = () => {
   return (
     <>
       <h1>Home H1</h1>
-      <p>Main is where the main content of the page will diplay</p>
+      <p>Main is where the main content of the page will display</p>
       <h2>And here's H2</h2>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quaerat,
