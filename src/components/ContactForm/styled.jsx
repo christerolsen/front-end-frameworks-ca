@@ -14,14 +14,16 @@ export const StyledLabel = styled.label`
 export const StyledInput = styled.input`
   padding: 0.5rem;
   margin-bottom: 1rem;
-  border: 1px solid ${({ theme }) => theme.colors.grey};
-  border-radius: 0.25rem;
+  border: ${({ theme }) => theme.borders.small}
+    ${({ theme }) => theme.colors.grey};
+  border-radius: ${({ theme }) => theme.borderRadius.small};
 `;
 
 export const StyledTextarea = styled.textarea`
   padding: 0.5rem;
-  border: 1px solid ${({ theme }) => theme.colors.grey};
-  border-radius: 0.25rem;
+  border: ${({ theme }) => theme.borders.small}
+    ${({ theme }) => theme.colors.grey};
+  border-radius: ${({ theme }) => theme.borderRadius.small};
   resize: vertical;
 `;
 

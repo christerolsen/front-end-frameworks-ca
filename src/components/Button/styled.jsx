@@ -3,8 +3,9 @@ import styled from "styled-components";
 export const StyledButton = styled.button`
   padding: 0.5rem 1rem;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: ${({ theme }) => theme.borderRadius.small};
   font-size: 1rem;
+  font-weight: 600;
   font-family: ${({ theme }) => theme.fonts.cta};
   cursor: pointer;
   align-self: end;

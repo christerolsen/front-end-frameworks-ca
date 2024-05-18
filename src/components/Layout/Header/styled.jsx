@@ -6,6 +6,7 @@ export const StyledHeader = styled.header`
   align-items: center;
   justify-content: space-between;
   background-color: ${({ theme }) => theme.colors.secondary};
-  border-bottom: 1px solid ${({ theme }) => theme.colors.primary};
+  border-bottom: ${({ theme }) => theme.borders.regular}
+    ${({ theme }) => theme.colors.primary};
   color: ${({ theme }) => theme.colors.primary};
 `;

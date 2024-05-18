@@ -22,19 +22,16 @@ const theme = {
   },
 
   borders: {
-    regular: "1px solid #d1d8e0",
+    small: "1px solid",
+    regular: "2px solid",
+    large: "4px solid",
+    dotted: "2px dotted",
   },
 
   borderRadius: {
-    small: "6px",
-    regular: "10px",
-    image: "50%",
-  },
-
-  shadows: {
-    small: "0px 2px 4px rgba(0, 0, 0, 0.1)",
-    medium: "0px 4px 8px rgba(0, 0, 0, 0.2)",
-    large: "0px 8px 16px rgba(0, 0, 0, 0.3)",
+    small: "8px",
+    regular: "16px",
+    image: "32px",
   },
 };
 
