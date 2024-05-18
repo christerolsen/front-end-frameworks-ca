@@ -1,4 +1,6 @@
+import React from "react";
 import useApi from "../../hooks/useApi";
+import ProductList from "../../components/ProductList";
 
 const HomePage = () => {
   document.title = "eComify | Home";
@@ -7,14 +9,14 @@ const HomePage = () => {
   );
 
   if (isLoading) {
-    return <>Loading</>;
+    return <>Loading...</>;
   }
 
   if (isError) {
-    return <>Error</>;
+    return <>Error loading data.</>;
   }
 
-  return <>Data Loaded Successfully!</>;
+  return <ProductList products={data} />;
 };
 
 export default HomePage;

@@ -4,7 +4,7 @@ import { ThemeProvider } from "styled-components";
 const theme = {
   colors: {
     primary: "#2C3E50", // Dark Blue Grey
-    secondary: "#18BC9C", // Turquoise
+    secondary: "#88DDCC", // Turquoise
     accent: "#E74C3C", // Soft Red
     background: "#ECF0F1", // Light Grey
     error: "#E74C3C", // Soft Red (Same as accent for consistency)
@@ -31,7 +31,7 @@ const theme = {
   borderRadius: {
     small: "8px",
     regular: "16px",
-    image: "32px",
+    large: "32px",
   },
 };
 
