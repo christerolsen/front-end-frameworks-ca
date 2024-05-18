@@ -1,13 +1,17 @@
 import React from "react";
 import ContactForm from "../../components/ContactForm";
+import Container from "../../components/Container";
 
 const ContactPage = () => {
   document.title = "eComify | Contact";
 
   return (
     <>
-      <h1>Contact us</h1>
-      <ContactForm />
+      <Container>
+        <h1>Contact us</h1>
+
+        <ContactForm />
+      </Container>
     </>
   );
 };

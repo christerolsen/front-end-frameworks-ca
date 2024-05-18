@@ -7,6 +7,7 @@ export const StyledButton = styled.button`
   font-size: 1rem;
   font-family: ${({ theme }) => theme.fonts.cta};
   cursor: pointer;
+  align-self: end;
 
   ${({ theme, variant, disabled }) => {
     switch (variant) {

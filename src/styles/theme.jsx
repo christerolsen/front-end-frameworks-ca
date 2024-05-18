@@ -8,7 +8,7 @@ const theme = {
     accent: "#E74C3C", // Soft Red
     background: "#ECF0F1", // Light Grey
     error: "#E74C3C", // Soft Red (Same as accent for consistency)
-    success: "#2ECC71", // Soft Green
+    success: "#00A946", // Soft Green
     disabled: "#BDC3C7", // Grey Blue
     black: "#2C3E50", // Dark Blue Grey (Same as primary for consistency)
     white: "#FFFFFF", // Pure White
@@ -32,9 +32,9 @@ const theme = {
   },
 
   shadows: {
-    small: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-    medium: "0px 8px 16px rgba(0, 0, 0, 0.2)",
-    large: "0px 12px 24px rgba(0, 0, 0, 0.3)",
+    small: "0px 2px 4px rgba(0, 0, 0, 0.1)",
+    medium: "0px 4px 8px rgba(0, 0, 0, 0.2)",
+    large: "0px 8px 16px rgba(0, 0, 0, 0.3)",
   },
 };
 

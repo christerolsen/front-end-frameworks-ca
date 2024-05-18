@@ -6,6 +6,7 @@ import {
   StyledInput,
   StyledTextarea,
   FormError,
+  SuccessMessage,
 } from "./styled";
 
 const ContactForm = () => {
@@ -17,6 +18,7 @@ const ContactForm = () => {
   });
 
   const [errors, setErrors] = useState({});
+  const [successMessage, setSuccessMessage] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -47,6 +49,7 @@ const ContactForm = () => {
     if (Object.keys(newErrors).length === 0) {
       console.log(formData);
       setErrors({});
+      setSuccessMessage("Success! Thank you for your message.");
       // Reset form
       setFormData({
         fullName: "",
@@ -56,6 +59,7 @@ const ContactForm = () => {
       });
     } else {
       setErrors(newErrors);
+      setSuccessMessage("");
     }
   };
 
@@ -107,6 +111,7 @@ const ContactForm = () => {
       <Button type="submit" variant="primary">
         Submit
       </Button>
+      {successMessage && <SuccessMessage>{successMessage}</SuccessMessage>}
     </StyledForm>
   );
 };

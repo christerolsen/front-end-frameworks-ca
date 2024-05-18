@@ -30,3 +30,10 @@ export const FormError = styled.span`
   font-weight: bold;
   color: ${({ theme }) => theme.colors.error};
 `;
+
+export const SuccessMessage = styled.span`
+  color: ${({ theme }) => theme.colors.success};
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+`;
