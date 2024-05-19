@@ -17,7 +17,7 @@ function useApi(url) {
 
         setData(data);
 
-        console.log(data);
+        console.log(data); //DELETE
       } catch (error) {
         console.log(error);
         setIsError(true);

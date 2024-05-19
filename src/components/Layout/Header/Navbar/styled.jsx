@@ -17,10 +17,6 @@ export const Logo = styled.div`
   font-size: 1.5rem;
   font-weight: bold;
 
-  &:hover {
-    color: ${({ theme }) => theme.colors.background};
-  }
-
   & svg {
     display: none;
   }
@@ -46,7 +42,7 @@ export const NavUl = styled.ul`
 export const NavItem = styled.li`
   padding: 0 2rem;
 
-  &:hover {
+  & a:hover {
     color: ${({ theme }) => theme.colors.background};
   }
 `;
