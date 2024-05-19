@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Button from "../../Button";
 import {
   ProductCardContainer,
@@ -11,7 +12,7 @@ import {
 import { formatPrice } from "../../../utils/priceUtils";
 import { formatRating } from "../../../utils/ratingUtils";
 
-const ProductCard = ({ image, title, price, discountedPrice, rating }) => {
+const ProductCard = ({ image, title, price, discountedPrice, rating, id }) => {
   const { formattedPrice, discount } = formatPrice(price, discountedPrice);
   const formattedRating = formatRating(rating);
 
@@ -26,7 +27,9 @@ const ProductCard = ({ image, title, price, discountedPrice, rating }) => {
           {discount && <SaleBadge> - {discount}</SaleBadge>}
         </ProductCardPrice>
       </ProductCardDetails>
-      <Button>View Product</Button>
+      <Link to={`/product/${id}`}>
+        <Button variant="primary">View Product</Button>
+      </Link>
     </ProductCardContainer>
   );
 };

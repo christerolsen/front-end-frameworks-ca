@@ -1,6 +1,6 @@
 // HomePage index.jsx
 const CheckoutSuccessPage = () => {
-  document.title = "eComify | Success";
+  document.title = "Success | eComify";
 
   return (
     <>

@@ -12,9 +12,8 @@ export const ProductCardContainer = styled.div`
   border-radius: ${({ theme }) => theme.borderRadius.regular};
   position: relative;
 
-  & button {
-    align-self: emd;
-    justify-self: end;
+  & a {
+    align-self: end;
     margin: 1rem;
   }
 `;
@@ -42,7 +41,6 @@ export const SaleBadge = styled.span`
   border: ${({ theme }) => theme.borders.regular}
     ${({ theme }) => theme.colors.primary};
   border-radius: ${({ theme }) => theme.borderRadius.small};
-  font-size: 0.75rem;
   margin-left: 0.5rem;
   position: absolute;
   top: 16px;
@@ -54,6 +52,5 @@ export const ProductCardRating = styled.p`
 
   & span {
     color: #ffd700; /* Gold */
-    text-shadow: 5px 5px #558abb;
   }
 `;

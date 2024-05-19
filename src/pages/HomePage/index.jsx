@@ -3,7 +3,7 @@ import useApi from "../../hooks/useApi";
 import ProductList from "../../components/ProductList";
 
 const HomePage = () => {
-  document.title = "eComify | Home";
+  document.title = "Home | eComify";
   const { data, isLoading, isError } = useApi(
     "https://v2.api.noroff.dev/online-shop"
   );

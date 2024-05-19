@@ -1,6 +1,6 @@
 // HomePage index.jsx
 const CartPage = () => {
-  document.title = "eComify | Cart";
+  document.title = "Cart | eComify";
 
   return (
     <>

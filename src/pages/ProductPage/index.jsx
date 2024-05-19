@@ -1,31 +1,25 @@
-// HomePage index.jsx
-const ProductPage = () => {
-  document.title = "eComify | !-Product-!";
+import { useParams } from "react-router-dom";
+import useApi from "../../hooks/useApi";
+import Product from "../../components/Product";
 
-  return (
-    <>
-      <h1>Product H1</h1>
-      <p>Main is where the main content of the page will diplay</p>
-      <h2>And here's H2</h2>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quaerat,
-        temporibus doloribus voluptatum consectetur iste optio quam? Non ipsa
-        saepe quasi, temporibus eveniet ullam ipsum sint molestiae amet,
-        doloremque quae.
-      </p>
-      <h3>Where this is H3</h3>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quaerat,
-        temporibus doloribus voluptatum consectetur iste optio quam? Non ipsa
-        saepe quasi, temporibus eveniet ullam ipsum sint molestiae amet,
-        doloremque quae.
-      </p>
-      <p>
-        <a href="#">This is a link</a>
-      </p>
-      <button>Click</button>
-    </>
+const ProductPage = () => {
+  let { id } = useParams();
+
+  const { data, isLoading, isError } = useApi(
+    `https://v2.api.noroff.dev/online-shop/${id}`
   );
+
+  document.title = `eComify | ${data.title}`;
+
+  if (isLoading) {
+    return <>Loading...</>;
+  }
+
+  if (isError) {
+    return <>Error loading data.</>;
+  }
+
+  return <Product products={data} />;
 };
 
 export default ProductPage;
