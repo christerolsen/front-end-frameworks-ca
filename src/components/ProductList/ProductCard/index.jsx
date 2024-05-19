@@ -4,20 +4,23 @@ import {
   ProductCardContainer,
   ProductCardImage,
   ProductCardDetails,
-  ProductCardTitle,
   ProductCardPrice,
   SaleBadge,
+  ProductCardRating,
 } from "./styled";
 import { formatPrice } from "../../../utils/priceUtils";
+import { formatRating } from "../../../utils/ratingUtils";
 
-const ProductCard = ({ image, title, price, discountedPrice }) => {
+const ProductCard = ({ image, title, price, discountedPrice, rating }) => {
   const { formattedPrice, discount } = formatPrice(price, discountedPrice);
+  const formattedRating = formatRating(rating);
 
   return (
     <ProductCardContainer>
       <ProductCardImage src={image.url} alt={title} />
       <ProductCardDetails>
-        <ProductCardTitle>{title}</ProductCardTitle>
+        <h2>{title}</h2>
+        <ProductCardRating>{formattedRating}</ProductCardRating>
         <ProductCardPrice>
           {formattedPrice}
           {discount && <SaleBadge> - {discount}</SaleBadge>}

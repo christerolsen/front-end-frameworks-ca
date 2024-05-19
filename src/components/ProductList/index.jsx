@@ -16,6 +16,7 @@ const ProductList = ({ products }) => {
           title={product.title}
           price={product.price}
           discountedPrice={product.discountedPrice}
+          rating={product.rating}
         />
       ))}
     </ProductListContainer>

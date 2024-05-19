@@ -10,6 +10,7 @@ export const ProductCardContainer = styled.div`
   border: ${({ theme }) => theme.borders.regular}
     ${({ theme }) => theme.colors.primary};
   border-radius: ${({ theme }) => theme.borderRadius.regular};
+  position: relative;
 
   & button {
     align-self: emd;
@@ -29,10 +30,6 @@ export const ProductCardDetails = styled.div`
   padding: 1rem;
 `;
 
-export const ProductCardTitle = styled.h3`
-  font-size: 1.2rem;
-`;
-
 export const ProductCardPrice = styled.p`
   font-size: 1rem;
   font-weight: bold;
@@ -40,9 +37,23 @@ export const ProductCardPrice = styled.p`
 
 export const SaleBadge = styled.span`
   background-color: ${({ theme }) => theme.colors.accent};
-  color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.white};
   padding: 0.2rem 0.5rem;
+  border: ${({ theme }) => theme.borders.regular}
+    ${({ theme }) => theme.colors.primary};
   border-radius: ${({ theme }) => theme.borderRadius.small};
+  font-size: 0.75rem;
   margin-left: 0.5rem;
-  font-size: 0.8rem;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+`;
+
+export const ProductCardRating = styled.p`
+  color: ${({ theme }) => theme.colors.primary};
+
+  & span {
+    color: #ffd700; /* Gold */
+    text-shadow: 5px 5px #558abb;
+  }
 `;
