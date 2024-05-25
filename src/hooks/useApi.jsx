@@ -26,8 +26,6 @@ function useApi(url) {
         await new Promise((resolve) => setTimeout(resolve, 500));
 
         setData(data);
-
-        console.log(data); //DELETE
       } catch (error) {
         console.error(error);
         setIsError(true);
