@@ -23,7 +23,11 @@ const ProductPage = () => {
     return <Error message={errorMessage} />;
   }
 
-  return <Product product={data} />;
+  return (
+    <>
+      <Product product={data} />
+    </>
+  );
 };
 
 export default ProductPage;
