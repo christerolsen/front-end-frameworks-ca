@@ -1,14 +1,13 @@
 import React from "react";
 import useApi from "../../hooks/useApi";
+import { baseUrl } from "../../constant/api";
 import Loader from "../../components/Loader";
 import Error from "../../components/Error";
 import ProductList from "../../components/ProductList";
 
 const HomePage = () => {
   document.title = "Home | eComify";
-  const { data, isLoading, isError, errorMessage } = useApi(
-    "https://v2.api.noroff.dev/online-shop"
-  );
+  const { data, isLoading, isError, errorMessage } = useApi(baseUrl);
 
   if (isLoading) {
     return (
