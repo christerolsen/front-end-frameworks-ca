@@ -24,7 +24,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin: 0 0 0.5em 0;
+    margin: 0 0 0.2rem 0;
     font-family: ${({ theme }) => theme.fonts.heading};
     font-weight: 600;
 }

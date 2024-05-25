@@ -19,5 +19,4 @@ export const CartBadge = styled.span`
   right: 0;
   transform: translate(50%, -50%);
   font-size: 0.5rem;
-  font-weight: bold;
 `;

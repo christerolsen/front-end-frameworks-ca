@@ -24,7 +24,7 @@ const ProductCard = ({ image, title, price, discountedPrice, rating, id }) => {
         <ProductCardRating>{formattedRating}</ProductCardRating>
         <ProductCardPrice>
           {formattedPrice}
-          {discount && <SaleBadge> - {discount}</SaleBadge>}
+          {discount && <SaleBadge>{discount}</SaleBadge>}
         </ProductCardPrice>
       </ProductCardDetails>
       <Link to={`/product/${id}`}>
