@@ -6,6 +6,7 @@ import ProductPage from "./pages/ProductPage";
 import CartPage from "./pages/CartPage";
 import CheckoutPage from "./pages/CheckoutPage";
 import CheckoutSuccessPage from "./pages/CheckoutSuccessPage";
+import NotFoundPage from "./pages/NotFoundPage";
 import Layout from "./components/Layout";
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
             <Route index element={<CheckoutPage />} />
             <Route path="success" element={<CheckoutSuccessPage />} />
           </Route>
+          <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
     </>
