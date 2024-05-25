@@ -4,7 +4,7 @@ import StarOutlineIcon from "@mui/icons-material/StarOutline";
 
 export const formatRating = (rating) => {
   if (rating === 0) {
-    return "No rating";
+    return "";
   }
 
   const fullStars = Math.floor(rating);
