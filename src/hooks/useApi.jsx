@@ -24,6 +24,8 @@ function useApi(url) {
         const json = await fetchedData.json();
         const data = json.data;
 
+        //console.log(data);
+
         // Adding a delay to show a loader
         await new Promise((resolve) => setTimeout(resolve, 500));
 

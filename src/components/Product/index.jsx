@@ -45,7 +45,7 @@ const Product = ({ product }) => {
         <ProductRating>{formattedRating}</ProductRating>
         <h2>Description:</h2>
         <p>{description}</p>
-        <p></p>
+        {discount && <p>Was: {price}</p>}
         <ProductPrice>
           Price: {formattedPrice}
           {discount && <SaleBadge>{discount}</SaleBadge>}
