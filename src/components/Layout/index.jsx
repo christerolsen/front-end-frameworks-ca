@@ -1,3 +1,5 @@
+// /src/components/Layout/index.jsx
+
 import React from "react";
 import Main from "./Main";
 import Header from "./Header";

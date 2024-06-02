@@ -1,4 +1,4 @@
-// src/pages/ProductPage/index.jsx
+// /src/pages/ProductPage/index.jsx
 
 import { useParams } from "react-router-dom";
 import useApi from "../../hooks/useApi";

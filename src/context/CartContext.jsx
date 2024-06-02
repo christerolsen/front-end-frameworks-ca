@@ -1,3 +1,5 @@
+// /src/context/CartContext.jsx
+
 import React, { createContext, useContext } from "react";
 import { useCart } from "../hooks/useCart";
 

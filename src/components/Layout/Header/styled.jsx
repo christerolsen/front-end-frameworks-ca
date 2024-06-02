@@ -1,3 +1,5 @@
+// /src/components/Layout/Header/styled.jsx
+
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`

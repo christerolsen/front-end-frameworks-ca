@@ -1,3 +1,5 @@
+// /src/hooks/useCart.jsx
+
 import { useLocalStorage } from "./useLocalStorage";
 
 export const useCart = () => {

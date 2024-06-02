@@ -1,3 +1,5 @@
+// /src/components/Layout/Header/index.jsx
+
 import React from "react";
 import { StyledHeader } from "./styled";
 import Navbar from "./Navbar";

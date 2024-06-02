@@ -1,3 +1,5 @@
+// /src/components/Layout/Header/CartIcon/index.jsx
+
 import React from "react";
 import { useCartContext } from "../../../../context/CartContext";
 import { StyledNavLink, CartBadge } from "./styled";

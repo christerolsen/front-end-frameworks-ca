@@ -1,3 +1,5 @@
+// /src/components/Layout/Footer/index.jsx
+
 import React from "react";
 import { StyledFooter } from "./styled";
 

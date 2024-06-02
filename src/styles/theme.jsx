@@ -1,4 +1,5 @@
-// theme.jsx
+// /src/styles/theme.jsx
+
 import { ThemeProvider } from "styled-components";
 
 const theme = {

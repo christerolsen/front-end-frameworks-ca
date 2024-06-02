@@ -1,3 +1,5 @@
+// /src/hooks/useLocalStorage.jsx
+
 import { useState } from "react";
 
 export const useLocalStorage = (key, initialValue) => {

@@ -1,3 +1,5 @@
+// /src/components/Loader/styled.jsx
+
 import styled, { keyframes } from "styled-components";
 
 const spin = keyframes`

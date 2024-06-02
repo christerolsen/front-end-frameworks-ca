@@ -1,3 +1,5 @@
+// /src/components/Error/styled.jsx
+
 import styled from "styled-components";
 
 export const ErrorContainer = styled.div`

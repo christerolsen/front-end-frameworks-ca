@@ -1,3 +1,5 @@
+// /src/components/Product/index.jsx
+
 import React, { useState } from "react";
 import Button from "../Button";
 import { useCartContext } from "../../context/CartContext";

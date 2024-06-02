@@ -1,3 +1,5 @@
+// /src/components/ProductList/styled.jsx
+
 import styled from "styled-components";
 
 export const ProductListContainer = styled.div`

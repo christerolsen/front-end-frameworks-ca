@@ -1,3 +1,5 @@
+// /src/pages/HomePage/index.jsx
+
 import React from "react";
 import useApi from "../../hooks/useApi";
 import { baseUrl } from "../../constant/api";

@@ -1,3 +1,5 @@
+// /src/components/Rating/index.jsx
+
 import React from "react";
 import { RatingStars, Star } from "./styled.jsx";
 

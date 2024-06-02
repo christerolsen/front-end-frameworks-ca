@@ -1,4 +1,5 @@
-// HomePage index.jsx
+// /src/pages/CheckoutSuccessPage/index.jsx
+
 const CheckoutSuccessPage = () => {
   document.title = "Success | eComify";
 

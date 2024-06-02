@@ -1,3 +1,5 @@
+// /src/components/ProductList/index.jsx
+
 import React from "react";
 import ProductCard from "./ProductCard";
 import { ProductListContainer } from "./styled";

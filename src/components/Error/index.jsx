@@ -1,3 +1,5 @@
+// /src/components/Error/index.jsx
+
 import React from "react";
 import { ErrorContainer, ErrorMessage } from "./styled";
 

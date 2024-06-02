@@ -1,4 +1,5 @@
-// HomePage index.jsx
+// /src/pages/CheckoutPage/index.jsx
+
 const CheckoutPage = () => {
   document.title = "Checkout | eComify";
 

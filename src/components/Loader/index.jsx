@@ -1,3 +1,5 @@
+// /src/components/Loader/index.jsx
+
 import React from "react";
 import { Spinner } from "./styled";
 

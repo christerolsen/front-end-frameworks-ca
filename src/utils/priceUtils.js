@@ -1,3 +1,5 @@
+// /src/utils/priceUtils.js
+
 export const formatPrice = (price, discountedPrice) => {
   if (price === undefined || discountedPrice === undefined) {
     return {
