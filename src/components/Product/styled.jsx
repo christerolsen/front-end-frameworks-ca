@@ -15,6 +15,7 @@ export const ProductImage = styled.div`
   background-image: url(${(props) => props.imageUrl});
   background-size: cover;
   background-position: center;
+  border: ${({ theme }) => theme.borders.regular};
   border-radius: ${({ theme }) => theme.borderRadius.regular};
   align-self: flex-end;
   margin-bottom: 1.5rem;
@@ -58,5 +59,7 @@ export const ProductPrice = styled.h3`
 `;
 
 export const ProductReviews = styled.div`
+  width: 100%;
   margin-top: 2rem;
+  border-top: ${({ theme }) => theme.borders.regular};
 `;
