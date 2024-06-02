@@ -1,5 +1,4 @@
-import React from "react";
-import Container from "../Container";
+import React, { useState } from "react";
 import Button from "../Button";
 import { useCartContext } from "../../context/CartContext";
 import {
@@ -17,6 +16,8 @@ import { formatPrice } from "../../utils/priceUtils.js";
 import Rating from "../Rating/index.jsx";
 
 const Product = ({ product }) => {
+  const [isAdded, setIsAdded] = useState(false);
+
   if (!product) {
     return <p>No product available</p>;
   }
@@ -28,6 +29,11 @@ const Product = ({ product }) => {
 
   const formattedRating = formatRating(rating);
   const { formattedPrice, discount } = formatPrice(price, discountedPrice);
+
+  const handleAddToCart = () => {
+    addItem(product);
+    setIsAdded(true);
+  };
 
   return (
     <ProductContainer>
@@ -41,8 +47,12 @@ const Product = ({ product }) => {
         <ProductPrice>
           Price: {formattedPrice}
           {discount && <SaleBadge>{discount}</SaleBadge>}
-          <Button variant="primary" onClick={() => addItem(product)}>
-            Add to Cart
+          <Button
+            variant="primary"
+            onClick={handleAddToCart}
+            disabled={isAdded}
+          >
+            {isAdded ? "Added" : "Add to Cart"}
           </Button>
         </ProductPrice>
       </ProductDetails>
@@ -73,15 +83,3 @@ const Product = ({ product }) => {
 };
 
 export default Product;
-
-//const { formattedPrice, discount } = formatPrice(price, discountedPrice);
-
-//<ProductCardImage src={image.url} alt={title} />
-//<ProductCardDetails>
-//  <h2>{title}</h2>
-//  <ProductCardRating>{formattedRating}</ProductCardRating>
-//  <ProductCardPrice>
-//    {formattedPrice}
-//    {discount && <SaleBadge> - {discount}</SaleBadge>}
-//  </ProductCardPrice>
-//</ProductCardDetails>
