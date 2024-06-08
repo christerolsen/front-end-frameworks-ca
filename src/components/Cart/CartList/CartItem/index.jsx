@@ -20,7 +20,7 @@ const CartItem = ({ item }) => {
   const { addItem, removeItem } = useCartContext();
   const { title, id, price, discountedPrice, quantity } = item;
   const { formattedPrice, discount } = formatPrice(price, discountedPrice);
-  const total = discountedPrice * quantity;
+  const total = (discountedPrice * quantity).toFixed(2);
 
   return (
     <CartItemContainer>

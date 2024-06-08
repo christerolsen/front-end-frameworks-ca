@@ -4,13 +4,20 @@ import styled from "styled-components";
 import Button from "../../../Button";
 
 export const CartItemContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   padding: 1rem;
   margin-bottom: 1rem;
   border-bottom: ${({ theme }) => theme.borders.small};
+
+  @media (max-width: 650px) {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
 `;
 
 export const CartItemDetails = styled.div``;
@@ -30,8 +37,9 @@ export const QuantityButton = styled(Button)``;
 export const Quantity = styled.span`
   margin: 0.25rem;
   font-weight: bold;
+  padding: 1rem;
 `;
 
 export const CartItemTotal = styled.div`
-  width: 100px;
+  font-weight: bold;
 `;
