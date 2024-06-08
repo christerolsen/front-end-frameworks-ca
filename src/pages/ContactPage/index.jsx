@@ -5,7 +5,7 @@ import ContactForm from "../../components/ContactForm";
 import Container from "../../components/Container";
 
 const ContactPage = () => {
-  document.title = "Contact | eComify";
+  document.title = "eComify | Contact";
 
   return (
     <>

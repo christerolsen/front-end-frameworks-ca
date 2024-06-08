@@ -5,7 +5,7 @@ import Cart from "../../components/Cart";
 import Container from "../../components/Container";
 
 const CheckoutPage = () => {
-  document.title = "Checkout | eComify";
+  document.title = "eComify | Cart";
 
   return (
     <>

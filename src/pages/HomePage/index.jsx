@@ -8,7 +8,7 @@ import Error from "../../components/Error";
 import ProductList from "../../components/ProductList";
 
 const HomePage = () => {
-  document.title = "Home | eComify";
+  document.title = "eComify | Home";
   const { data, isLoading, isError, errorMessage } = useApi(baseUrl);
 
   if (isLoading) {

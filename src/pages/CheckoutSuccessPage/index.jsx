@@ -6,6 +6,7 @@ import { useCartContext } from "../../context/CartContext";
 
 const CheckoutSuccessPage = () => {
   const { clearCart } = useCartContext();
+  document.title = "eComify | Success";
 
   useEffect(() => {
     clearCart();

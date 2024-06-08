@@ -12,6 +12,7 @@ import {
 } from "./styled.jsx";
 
 const NotFoundPage = () => {
+  document.title = "eComify | Page not found";
   return (
     <>
       <NotFoundContainer>
