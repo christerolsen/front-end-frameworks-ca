@@ -27,7 +27,11 @@ const HomePage = () => {
     );
   }
 
-  return <ProductList products={data} />;
+  return (
+    <>
+      <ProductList products={data} />
+    </>
+  );
 };
 
 export default HomePage;
