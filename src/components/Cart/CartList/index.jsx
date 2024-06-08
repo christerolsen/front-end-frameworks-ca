@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useCartContext } from "../../../context/CartContext.jsx";
+import { Link } from "react-router-dom";
 import CartItem from "./CartItem/index.jsx";
 import Button from "../../Button/index.jsx";
 import { CartListContainer, TotalSum } from "./styled.jsx";
@@ -25,7 +26,9 @@ const CartList = () => {
         ))}
       </ul>
       <TotalSum>Total Sum: ${totalSum}</TotalSum>
-      <Button>Checkout</Button>
+      <Link to={`/success`}>
+        <Button variant="primary">Checkout</Button>
+      </Link>
     </CartListContainer>
   );
 };

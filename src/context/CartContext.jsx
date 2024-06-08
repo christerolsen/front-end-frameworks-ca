@@ -1,6 +1,12 @@
 // /src/context/CartContext.jsx
 
-import React, { createContext, useContext, useState, useEffect } from "react";
+import React, {
+  createContext,
+  useContext,
+  useState,
+  useEffect,
+  useCallback,
+} from "react";
 
 const CartContext = createContext();
 
@@ -42,8 +48,12 @@ export const CartProvider = ({ children }) => {
     });
   };
 
+  const clearCart = useCallback(() => {
+    setCart([]);
+  }, []);
+
   return (
-    <CartContext.Provider value={{ cart, addItem, removeItem }}>
+    <CartContext.Provider value={{ cart, addItem, removeItem, clearCart }}>
       {children}
     </CartContext.Provider>
   );

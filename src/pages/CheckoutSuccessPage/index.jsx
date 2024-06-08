@@ -1,31 +1,22 @@
 // /src/pages/CheckoutSuccessPage/index.jsx
 
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
+import { useCartContext } from "../../context/CartContext";
+
 const CheckoutSuccessPage = () => {
-  document.title = "Success | eComify";
+  const { clearCart } = useCartContext();
+
+  useEffect(() => {
+    clearCart();
+  }, [clearCart]);
 
   return (
-    <>
-      <h1>Checkout Succsess H1</h1>
-      <p>Main is where the main content of the page will diplay</p>
-      <h2>And here's H2</h2>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quaerat,
-        temporibus doloribus voluptatum consectetur iste optio quam? Non ipsa
-        saepe quasi, temporibus eveniet ullam ipsum sint molestiae amet,
-        doloremque quae.
-      </p>
-      <h3>Where this is H3</h3>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quaerat,
-        temporibus doloribus voluptatum consectetur iste optio quam? Non ipsa
-        saepe quasi, temporibus eveniet ullam ipsum sint molestiae amet,
-        doloremque quae.
-      </p>
-      <p>
-        <a href="#">This is a link</a>
-      </p>
-      <button>Click</button>
-    </>
+    <div>
+      <h1>Order Successful!</h1>
+      <p>Your order has been placed successfully.</p>
+      <Link to="/">Go back to the store</Link>
+    </div>
   );
 };
 

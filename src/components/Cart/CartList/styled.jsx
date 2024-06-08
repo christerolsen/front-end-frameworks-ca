@@ -12,4 +12,5 @@ export const TotalSum = styled.div`
   align-self: end;
   margin: 1.5rem;
   font-size: 1.5rem;
+  text-decoration: underline;
 `;
