@@ -1,7 +1,6 @@
 # Front-end Frameworks Course Assignment
 
 ![image](/src/assets/demostration_gif.gif)
-_Screenshot of the homepage goes here_
 
 eComify is a responsive e-commerce web application built with React and Vite. The app allows users to browse products, view detailed product information, manage a shopping cart, and complete a fictional purchase. The project leverages React Router for client-side routing, styled-components for styling, and integrates with an external API to fetch product data.
 
