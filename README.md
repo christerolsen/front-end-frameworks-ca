@@ -10,7 +10,7 @@ To apply knowledge of React to build an eCom store.
 
 ## Deployment
 
-https://ecomify-a-front-end-frameworks-ca.netlify.com
+https://ecomify-a-front-end-frameworks-ca.netlify.app
 
 ## Built with
 
