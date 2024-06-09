@@ -9,7 +9,7 @@ eComify is a responsive e-commerce web application built with React and Vite. Th
 To apply knowledge of React to build an eCom store.
 
 ## Deployment
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8b832450-0e41-41e7-a807-bdef07cc46f6/deploy-status)](https://app.netlify.com/sites/ecomify-a-front-end-frameworks-ca/deploys)
 https://ecomify-a-front-end-frameworks-ca.netlify.app
 
 ## Built with
