@@ -10,7 +10,7 @@ const CheckoutPage = () => {
   return (
     <>
       <Container>
-        <h1>Checkout</h1>
+        <h1>Cart</h1>
 
         <Cart />
       </Container>
