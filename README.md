@@ -9,6 +9,7 @@ eComify is a responsive e-commerce web application built with React and Vite. Th
 To apply knowledge of React to build an eCom store.
 
 ## Deployment
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8b832450-0e41-41e7-a807-bdef07cc46f6/deploy-status)](https://app.netlify.com/sites/ecomify-a-front-end-frameworks-ca/deploys)
 
 - [Live site](https://ecomify-a-front-end-frameworks-ca.netlify.app)
@@ -48,12 +49,24 @@ npm install
 npm install @mui/icons-material @mui/material @emotion/react @emotion/styled
 ```
 
+4. Install the vite-plugin-static-copy plugin:
+
+```bash
+npm install vite-plugin-static-copy --save-dev
+```
+
 ### Running the Application
 
 - To start the development server:
 
 ```bash
 npm run dev
+```
+
+- To build the project for production:
+
+```bash
+npm run build
 ```
 
 ## Dependencies
@@ -74,6 +87,7 @@ npm run dev
 - **eslint-plugin-react-hooks:** `^4.6.0`
 - **eslint-plugin-react-refresh:** `^0.4.6`
 - **vite:** `^5.2.0`
+- **vite-plugin-static-copy:** `^1.0.5`
 
 ## Features
 
@@ -198,7 +212,7 @@ npm run dev
 
 ### Hooks
 
-- **useApi:***
+- **useApi:\***
 
   - Custom hook to fetch data from an API endpoint.
   - Manages loading and error states.
