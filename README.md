@@ -1,6 +1,6 @@
 # Front-end Frameworks Course Assignment
 
-![image](/public/vite.svg)
+![image](/src/assets/demostration_gif.gif)
 _Screenshot of the homepage goes here_
 
 eComify is a responsive e-commerce web application built with React and Vite. The app allows users to browse products, view detailed product information, manage a shopping cart, and complete a fictional purchase. The project leverages React Router for client-side routing, styled-components for styling, and integrates with an external API to fetch product data.
@@ -9,9 +9,9 @@ eComify is a responsive e-commerce web application built with React and Vite. Th
 
 To apply knowledge of React to build an eCom store.
 
-## Deplyment
+## Deployment
 
-(https://...............)
+https://ecomify-a-front-end-frameworks-ca.netlify.com
 
 ## Built with
 
@@ -109,15 +109,11 @@ npm run lint
   - Shows discounted price if available, with the discount percentage calculated and displayed.
   - Includes an "Add to Cart" button to add the product to the shopping cart.
 
-- **Cart Page:**
+- **Checkout Page:**
 
   - Lists all products added to the cart.
   - Displays the total price of the items in the cart.
   - Includes a "Checkout" button to proceed to the checkout process.
-
-- **Checkout Page:**
-
-  - ?????
 
 - **Checkout Success Page:**
 
@@ -131,10 +127,108 @@ npm run lint
   - Validates input fields to ensure they meet specified requirements.
   - Logs form data to the console upon successful submission.
 
+- **Not Found Page:**
+
+  - Displays a 404 error message for any undefined routes.
+  - Provides a link to return to the homepage.
+
 ### Components
 
-- **Layout:** Contains the header with navigation, cart icon, and footer.
-- **Cart:** Contains....
+- **Button:**
+
+  - A reusable buttom component styled with styled-components.
+
+- **Cart:**
+
+  - _CartList:_
+
+    - A list component to display multiple cart items.
+    - Manages the rendering of individual cart items.
+    - Provides a summary of the total cost.
+    - Proved a button for checkout.
+
+  - _CartItem:_
+    - Represents a single item in the cart.
+    - Displays item details and allows for quantity adjustments or removal.
+
+- **ContactForm:**
+
+  - A form component for submitting user inquiries.
+  - Includes validation for required fields.
+
+- **Container:**
+
+  - A layout component to wrap and center content on the page.
+
+- **Error:**
+
+  - Displays error messages to the user.
+  - Used for showing error in various parts of the application.
+
+- **Layout:**
+
+  - A layout component that includes _Header_, _Footer_, and _Main_ sections.
+
+  - _Header:_
+
+    - Contains navigation links and the cart icon.
+    - Includes sub-components like _CartIcon_ and _Navbar_.
+
+  - _Footer:_
+
+    - Contains footer information.
+
+  - _Main:_
+    - Wraps the main content of the application.
+
+- **Loader:**
+
+  - A loading spinner component to indicate data fetching.
+
+- **Product:**
+
+  - Displays individual product details.
+  - Includes an "Add to Cart" button.
+
+- **ProductList:**
+
+  - A list component to display multiple products.
+  - Manages the rendering of individual product cards.
+
+  - _ProductCard:_
+    - Represents a single product in the list.
+    - Displays product details and a link to the product specific page.
+
+- **Rating:**
+
+  - Displays the product rating.
+  - Allows users to see the product ratings with comments.
+
+- **Search:**
+  - A search component to filter products by name.
+  - Includes a look-ahead feature to show matching results as the user types in.
+
+### Context
+
+- **CartContext:**
+  - Provides a context to manage the state of the shopping cart.
+  - Includes a _CartProvider_ component to wrap the application and provide the cart context.
+
+### Hooks
+
+- **useApi:\***
+
+  - Custom hook to fetch data from an API endpoint.
+  - Manages loading and error states.
+
+- **useCart:**
+
+  - Custom hook to manage actions related to the shopping cart.
+  - Includes functions to add, remove, and clear items from the cart.
+
+- **useLocalStorage:**
+  - Custom hook to manage localStorage.
+  - Provides a way to store and retrieve values from localStorage.
 
 ### Using Material UI Icons
 
