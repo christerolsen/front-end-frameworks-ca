@@ -55,24 +55,6 @@ npm install @mui/icons-material @mui/material @emotion/react @emotion/styled
 npm run dev
 ```
 
-- To build the project:
-
-```bash
-npm run build
-```
-
-- To preview the built project:
-
-```bash
-npm run preview
-```
-
-- To link the project:
-
-```bash
-npm run lint
-```
-
 ## Dependencies
 
 - **React:** `^18.2.0`
@@ -215,7 +197,7 @@ npm run lint
 
 ### Hooks
 
-- **useApi:\***
+- **useApi:***
 
   - Custom hook to fetch data from an API endpoint.
   - Manages loading and error states.
